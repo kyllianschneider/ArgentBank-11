@@ -12,13 +12,13 @@ const userSlice = createSlice({
     firstName: "",
     lastName: "",
     userName: "",
+    email: "",
   },
 
   reducers: {
     login(state, action) {
       state.userConnexion = true;
       state.token = action.payload.token;
-     
     },
 
     logout(state) {
@@ -27,6 +27,7 @@ const userSlice = createSlice({
       state.firstName = "";
       state.lastName = "";
       state.userName = "";
+      localStorage.removeItem("token");
     },
 
     userError: (state, action) => {
