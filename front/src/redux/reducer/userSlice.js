@@ -39,6 +39,7 @@ const userSlice = createSlice({
       state.lastName = action.payload.body.lastName;
       state.userName = action.payload.body.userName;
       state.email = action.payload.body.email;
+      //verifier le .body 
     },
 
     updateUsername: (state, action) => {

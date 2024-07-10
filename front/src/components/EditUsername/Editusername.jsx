@@ -57,11 +57,11 @@ const EditUsername = () => {
                     <h2>Edit User Info</h2>
                     <form onSubmit={handleClickSave}>
                         <label htmlFor="userName">User Name</label>
-                        <input type="text" placeholder={userName} onChange={handleUserNameChange} />
+                        <input type="text" value={userName} onChange={handleUserNameChange} />
                         <label htmlFor="firstName">First Name</label>
-                        <input type="text" placeholder={firstName} readOnly />
+                        <input type="text" value={firstName} readOnly />
                         <label htmlFor="lastName">Last Name</label>
-                        <input type="text" placeholder={lastName} readOnly />
+                        <input type="text" value={lastName} readOnly />
                         <div className="buttons-edit">
                             <button className="edit-button" type="submit">
                                 Save
