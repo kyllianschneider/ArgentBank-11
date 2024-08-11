@@ -35,7 +35,7 @@ const User = () => {
         const { data } = response;
         if (data.status === 200) {
           console.log(data.body);
-          dispatch(userProfile(data.body));
+          dispatch(userProfile(data));
         } else {
           throw new Error(data.message);
         }
