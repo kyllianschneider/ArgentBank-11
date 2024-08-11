@@ -10,7 +10,7 @@ const NavBar = () => {
   const handleLogout = () => {
     dispatch(logout());
   };
-
+  const { userName } = useSelector((state) => state.user);
   return (
     <nav className="main-nav">
       <Link to="/Home" className="main-nav-logo">
@@ -25,10 +25,10 @@ const NavBar = () => {
         <div>
           <Link to="/User" className="main-nav-item">
             <i className="fa fa-user-circle"></i>
-            userName
+            {userName}
           </Link>
           <Link to="/" onClick={handleLogout} className="main-nav-item">
-            <i className="fa-solid fa-right-from-bracket"></i>
+            <i className="fa fa-sign-out"></i>
             Sign Out
           </Link>
         </div>

@@ -32,3 +32,12 @@
   max-width: 100%;
   width: 200px;
 }
+
+.fa-user-circle:before{
+  content: "\f2bd";
+  margin-right: 5px;
+}
+.fa-sign-out:before {
+  content: "\f08b";
+  margin-right: 5px;
+}
